@@ -1,0 +1,32 @@
+.page-header {
+  background-image: url('../img/header.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 100vh; } }
+figure {
+  position: relative; }
+  figure a {
+    background: black;
+    display: block;
+    overflow: hidden; }
+    figure a img {
+      transition: 0.5s; }
+  figure:hover a > img {
+    opacity: 0.5;
+    transform: scale(1.1); }
+  figure:hover figcaption {
+    opacity: 1;
+    transform: translateY(0); }
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  color: white;
+  transform: translateY(50px);
+  pointer-events: none;
+  transition: 0.5s; }
